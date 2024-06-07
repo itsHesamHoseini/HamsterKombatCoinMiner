@@ -37,7 +37,7 @@ class Hamster
     /**
      * @throws Exception
      */
-    public function _Click($rand = 0, $param="")
+    public function _Click($rand = 0, $param="balanceCoins")
     {
         $token=$this->getToken();
         $rand = ($rand == 0) ? rand(1, 5) : $rand;
