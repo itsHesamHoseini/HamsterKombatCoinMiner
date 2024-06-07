@@ -13,7 +13,7 @@ ini_set('display_errors', 0);
 error_reporting(0);
 // -----------------------------
 // require Zone!
-require_once("functions.php");
+require_once("../src/hamster.php");
 // -----------------------------
 /*
  * You can put your token manual in $token variable!
