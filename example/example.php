@@ -5,7 +5,12 @@
 if (version_compare(PHP_VERSION, '8.0.0', '<')) {
     // Display a message and exit
     echo "This script requires PHP version 8.0.0 or higher. You are running version " . PHP_VERSION . ".";
-    exit();
+    exit;
+}
+try {
+    $ch = curl_init();
+} catch (Exception $e) {
+    echo "I Think PHP-cURL Not installed on your system!". PHP_EOL;
 }
 // -----------------------------
 // Disable display errors and logs!
