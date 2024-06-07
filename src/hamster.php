@@ -183,7 +183,7 @@ class Hamster
             }
         }
         if (!$data[$key]['isCompleted']) { // daily coins!
-            echo "< --------- We Get Your Daily Coin!(" . $data[$key]['rewardCoins'] . ") ----------- >";
+            echo "< --------- We Get Your Daily Coin!(" . $data[$key]['rewardCoins'] . ") ----------- >".PHP_EOL;
             //// continue;
             return $this->UpgradeCarts('streak_days');
         }
