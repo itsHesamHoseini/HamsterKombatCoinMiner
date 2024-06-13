@@ -23,7 +23,7 @@ This project includes a bot for interacting with the Hamster Kombat game API, pr
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/YourUsername/HamsterKombatBot.git
+    git clone https://github.com/itsHesamHoseini/HamsterKombatBot.git
     cd HamsterKombatBot
     ```
 
