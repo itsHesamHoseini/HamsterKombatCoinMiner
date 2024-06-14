@@ -4,6 +4,8 @@
 
 **Coded By:** [ItsHesamHoseini](https://t.me/ItsHesamHoseini) - [LinuxTV_ir](https://t.me/LinuxTV_ir)
 
+![HamsterKombatCoinMiner](https://i1.delgarm.com/i/806/030314/665d83c404102.jpeg)
+
 This project includes a bot for interacting with the Hamster Kombat game API, providing various functionalities including automatic clicking, user information retrieval, task list retrieval, and card optimization using the `Hamster` class.
 
 ## Features
