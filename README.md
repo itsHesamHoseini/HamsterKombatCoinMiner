@@ -123,7 +123,7 @@ This project is licensed under the [MIT License](LICENSE).
 ## Contact Us
 
 You can contact us through the following links:
-- **ItsHesamHoseini:** [Telegram](https://t.me/ItsHesamHoseini)
+- **ItsHesamHoseini:** [Telegram](https://t.me/Its_HesamHoseini)
 - **LinuxTV_ir:** [Telegram](https://t.me/LinuxTV_ir)
 
 ---
