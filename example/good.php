@@ -3,7 +3,7 @@
 
 
 require_once("color.php");
-require_once("functions.php");
+require_once("../src/functions.php");
 require_once("Sys.php");
 
 require_once ("runCodeFunction.php");
