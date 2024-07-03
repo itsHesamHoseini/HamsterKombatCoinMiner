@@ -1,6 +1,6 @@
 # Hamster Kombat Bot
 
-**Version:** 1.0
+**Version:** 2.0
 
 **Coded By:** [ItsHesamHoseini](https://t.me/ItsHesamHoseini) - [LinuxTV_ir](https://t.me/LinuxTV_ir)
 
