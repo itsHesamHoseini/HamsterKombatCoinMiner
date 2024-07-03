@@ -461,6 +461,9 @@ MAME;
                                 $sumprofit = 0;
                                 $sum = 0;
                             }
+                            else{
+                                break;
+                            }
                         }
                     }
                 }
