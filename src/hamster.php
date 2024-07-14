@@ -39,7 +39,7 @@ class Hamster
      */
     public function list_tasks(){
         $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL, 'https://api.hamsterkombat.io/clicker/list-tasks');
+        curl_setopt($ch, CURLOPT_URL, 'https://api.hamsterkombatgame.io/clicker/list-tasks');
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
         curl_setopt($ch, CURLOPT_POST, 1);
         $headers = array();
@@ -48,8 +48,8 @@ class Hamster
         $headers[] = 'Authorization: Bearer '.$this->getToken();
         $headers[] = 'Connection: keep-alive';
         $headers[] = 'Content-Length: 0';
-        $headers[] = 'Origin: https://hamsterkombat.io';
-        $headers[] = 'Referer: https://hamsterkombat.io/';
+        $headers[] = 'Origin: https://hamsterkombatgame.io';
+        $headers[] = 'Referer: https://hamsterkombatgame.io/';
         $headers[] = 'Sec-Fetch-Dest: empty';
         $headers[] = 'Sec-Fetch-Mode: cors';
         $headers[] = 'Sec-Fetch-Site: same-site';
@@ -68,7 +68,7 @@ class Hamster
     public function GetBoostsData(){
         $ch = curl_init();
 
-        curl_setopt($ch, CURLOPT_URL, 'https://api.hamsterkombat.io/clicker/boosts-for-buy');
+        curl_setopt($ch, CURLOPT_URL, 'https://api.hamsterkombatgame.io/clicker/boosts-for-buy');
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
         curl_setopt($ch, CURLOPT_POST, 1);
 
@@ -78,8 +78,8 @@ class Hamster
         $headers[] = 'Authorization: Bearer '.$this->getToken();
         $headers[] = 'Connection: keep-alive';
         $headers[] = 'Content-Length: 0';
-        $headers[] = 'Origin: https://hamsterkombat.io';
-        $headers[] = 'Referer: https://hamsterkombat.io/';
+        $headers[] = 'Origin: https://hamsterkombatgame.io';
+        $headers[] = 'Referer: https://hamsterkombatgame.io/';
         $headers[] = 'Sec-Fetch-Dest: empty';
         $headers[] = 'Sec-Fetch-Mode: cors';
         $headers[] = 'Sec-Fetch-Site: same-site';
@@ -98,15 +98,15 @@ class Hamster
     }
     public function FullEnergy(){
         $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL, 'https://api.hamsterkombat.io/clicker/buy-boost');
+        curl_setopt($ch, CURLOPT_URL, 'https://api.hamsterkombatgame.io/clicker/buy-boost');
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
         curl_setopt($ch, CURLOPT_POST, 1);
         curl_setopt($ch, CURLOPT_POSTFIELDS, "{\"boostId\":\"BoostFullAvailableTaps\",\"timestamp\":".time()."}");
         $headers = array();
         $headers[] = 'Accept-Language: en-US,en;q=0.9';
         $headers[] = 'Connection: keep-alive';
-        $headers[] = 'Origin: https://hamsterkombat.io';
-        $headers[] = 'Referer: https://hamsterkombat.io/';
+        $headers[] = 'Origin: https://hamsterkombatgame.io';
+        $headers[] = 'Referer: https://hamsterkombatgame.io/';
         $headers[] = 'Sec-Fetch-Dest: empty';
         $headers[] = 'Sec-Fetch-Mode: cors';
         $headers[] = 'Sec-Fetch-Site: same-site';
@@ -128,15 +128,15 @@ class Hamster
     public function cipher($morse_code){
 	$token=$this->getToken();
 	$ch=curl_init();
-	curl_setopt($ch, CURLOPT_URL, 'https://api.hamsterkombat.io/clicker/claim-daily-cipher');
+	curl_setopt($ch, CURLOPT_URL, 'https://api.hamsterkombatgame.io/clicker/claim-daily-cipher');
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
         curl_setopt($ch, CURLOPT_POST, 1);
         curl_setopt($ch, CURLOPT_POSTFIELDS, "{\"cipher\":\"$morse_code\"}");
         $headers = array();
         $headers[] = 'Accept-Language: en-US,en;q=0.9';
         $headers[] = 'Connection: keep-alive';
-        $headers[] = 'Origin: https://hamsterkombat.io';
-        $headers[] = 'Referer: https://hamsterkombat.io/';
+        $headers[] = 'Origin: https://hamsterkombatgame.io';
+        $headers[] = 'Referer: https://hamsterkombatgame.io/';
         $headers[] = 'Sec-Fetch-Dest: empty';
         $headers[] = 'Sec-Fetch-Mode: cors';
         $headers[] = 'Sec-Fetch-Site: same-site';
@@ -158,7 +158,7 @@ class Hamster
     public function sync(){
         $ch = curl_init();
 
-        curl_setopt($ch, CURLOPT_URL, 'https://api.hamsterkombat.io/clicker/sync');
+        curl_setopt($ch, CURLOPT_URL, 'https://api.hamsterkombatgame.io/clicker/sync');
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
         curl_setopt($ch, CURLOPT_POST, 1);
 
@@ -168,8 +168,8 @@ class Hamster
         $headers[] = 'Authorization: Bearer '.$this->getToken();
         $headers[] = 'Connection: keep-alive';
         $headers[] = 'Content-Length: 0';
-        $headers[] = 'Origin: https://hamsterkombat.io';
-        $headers[] = 'Referer: https://hamsterkombat.io/';
+        $headers[] = 'Origin: https://hamsterkombatgame.io';
+        $headers[] = 'Referer: https://hamsterkombatgame.io/';
         $headers[] = 'Sec-Fetch-Dest: empty';
         $headers[] = 'Sec-Fetch-Mode: cors';
         $headers[] = 'Sec-Fetch-Site: same-site';
@@ -195,7 +195,7 @@ class Hamster
 
     public function config(){
         $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL, 'https://api.hamsterkombat.io/clicker/config');
+        curl_setopt($ch, CURLOPT_URL, 'https://api.hamsterkombatgame.io/clicker/config');
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
         curl_setopt($ch, CURLOPT_POST, 1);
         $headers = array();
@@ -204,8 +204,8 @@ class Hamster
         $headers[] = 'Authorization: Bearer '.$this->getToken();
         $headers[] = 'Connection: keep-alive';
         $headers[] = 'Content-Length: 0';
-        $headers[] = 'Origin: https://hamsterkombat.io';
-        $headers[] = 'Referer: https://hamsterkombat.io/';
+        $headers[] = 'Origin: https://hamsterkombatgame.io';
+        $headers[] = 'Referer: https://hamsterkombatgame.io/';
         $headers[] = 'Sec-Fetch-Dest: empty';
         $headers[] = 'Sec-Fetch-Mode: cors';
         $headers[] = 'Sec-Fetch-Site: same-site';
@@ -227,7 +227,7 @@ class Hamster
         $rand = ($rand == 0) ? rand(1, 9) : $rand;
         $time = time();
         $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL, 'https://api.hamsterkombat.io/clicker/tap');
+        curl_setopt($ch, CURLOPT_URL, 'https://api.hamsterkombatgame.io/clicker/tap');
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
         
         curl_setopt($ch, CURLOPT_POST, 1);
@@ -235,8 +235,8 @@ class Hamster
         $headers = array();
         $headers[] = 'Accept-Language: en-US,en;q=0.9';
         $headers[] = 'Connection: keep-alive';
-        $headers[] = 'Origin: https://hamsterkombat.io';
-        $headers[] = 'Referer: https://hamsterkombat.io/';
+        $headers[] = 'Origin: https://hamsterkombatgame.io';
+        $headers[] = 'Referer: https://hamsterkombatgame.io/';
         $headers[] = 'Sec-Fetch-Dest: empty';
         $headers[] = 'Sec-Fetch-Mode: cors';
         $headers[] = 'Sec-Fetch-Site: same-site';
@@ -272,14 +272,14 @@ class Hamster
         $token=$this->getToken();
         $time = time();
         $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL, 'https://api.hamsterkombat.io/auth/me-telegram');
+        curl_setopt($ch, CURLOPT_URL, 'https://api.hamsterkombatgame.io/auth/me-telegram');
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
         curl_setopt($ch, CURLOPT_POST, 1);
         $headers = array();
         $headers[] = 'Accept-Language: en-US,en;q=0.9';
         $headers[] = 'Connection: keep-alive';
-        $headers[] = 'Origin: https://hamsterkombat.io';
-        $headers[] = 'Referer: https://hamsterkombat.io/';
+        $headers[] = 'Origin: https://hamsterkombatgame.io';
+        $headers[] = 'Referer: https://hamsterkombatgame.io/';
         $headers[] = 'Sec-Fetch-Dest: empty';
         $headers[] = 'Sec-Fetch-Mode: cors';
         $headers[] = 'Sec-Fetch-Site: same-site';
@@ -304,14 +304,14 @@ class Hamster
         $token=$this->getToken();
         $time = time();
         $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL, 'https://api.hamsterkombat.io/clicker/list-tasks');
+        curl_setopt($ch, CURLOPT_URL, 'https://api.hamsterkombatgame.io/clicker/list-tasks');
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
         curl_setopt($ch, CURLOPT_POST, 1);
         $headers = array();
         $headers[] = 'Accept-Language: en-US,en;q=0.9';
         $headers[] = 'Connection: keep-alive';
-        $headers[] = 'Origin: https://hamsterkombat.io';
-        $headers[] = 'Referer: https://hamsterkombat.io/';
+        $headers[] = 'Origin: https://hamsterkombatgame.io';
+        $headers[] = 'Referer: https://hamsterkombatgame.io/';
         $headers[] = 'Sec-Fetch-Dest: empty';
         $headers[] = 'Sec-Fetch-Mode: cors';
         $headers[] = 'Sec-Fetch-Site: same-site';
@@ -365,15 +365,15 @@ class Hamster
     }
     public function check_task(string $task){
         $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL, 'https://api.hamsterkombat.io/clicker/check-task');
+        curl_setopt($ch, CURLOPT_URL, 'https://api.hamsterkombatgame.io/clicker/check-task');
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
         curl_setopt($ch, CURLOPT_POST, 1);
         curl_setopt($ch, CURLOPT_POSTFIELDS, "{\"taskId\":\"$task\"}");
         $headers = array();
         $headers[] = 'Accept-Language: en-US,en;q=0.9';
         $headers[] = 'Connection: keep-alive';
-        $headers[] = 'Origin: https://hamsterkombat.io';
-        $headers[] = 'Referer: https://hamsterkombat.io/';
+        $headers[] = 'Origin: https://hamsterkombatgame.io';
+        $headers[] = 'Referer: https://hamsterkombatgame.io/';
         $headers[] = 'Sec-Fetch-Dest: empty';
         $headers[] = 'Sec-Fetch-Mode: cors';
         $headers[] = 'Sec-Fetch-Site: same-site';
@@ -420,15 +420,15 @@ class Hamster
 	$time=round(microtime(true)*1000);
 
 	$ch = curl_init();
-	curl_setopt($ch, CURLOPT_URL, 'https://api.hamsterkombat.io/clicker/buy-upgrade');
+	curl_setopt($ch, CURLOPT_URL, 'https://api.hamsterkombatgame.io/clicker/buy-upgrade');
 	curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 	curl_setopt($ch, CURLOPT_POST, 1);
 	curl_setopt($ch, CURLOPT_POSTFIELDS, "{\"upgradeId\":\"$task_id\",\"timestamp\":$time}");
 	$headers = array();
 	$headers[] = 'Accept-Language: en-US,en;q=0.9';
 	$headers[] = 'Connection: keep-alive';
-	$headers[] = 'Origin: https://hamsterkombat.io';
-	$headers[] = 'Referer: https://hamsterkombat.io/';
+	$headers[] = 'Origin: https://hamsterkombatgame.io';
+	$headers[] = 'Referer: https://hamsterkombatgame.io/';
 	$headers[] = 'Sec-Fetch-Dest: empty';
 	$headers[] = 'Sec-Fetch-Mode: cors';
 	$headers[] = 'Sec-Fetch-Site: same-site';
@@ -452,14 +452,14 @@ class Hamster
         $token=$this->getToken();
         $time = time();
         $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL, 'https://api.hamsterkombat.io/clicker/upgrades-for-buy');
+        curl_setopt($ch, CURLOPT_URL, 'https://api.hamsterkombatgame.io/clicker/upgrades-for-buy');
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
         curl_setopt($ch, CURLOPT_POST, 1);
         $headers = array();
         $headers[] = 'Accept-Language: en-US,en;q=0.9';
         $headers[] = 'Connection: keep-alive';
-        $headers[] = 'Origin: https://hamsterkombat.io';
-        $headers[] = 'Referer: https://hamsterkombat.io/';
+        $headers[] = 'Origin: https://hamsterkombatgame.io';
+        $headers[] = 'Referer: https://hamsterkombatgame.io/';
         $headers[] = 'Sec-Fetch-Dest: empty';
         $headers[] = 'Sec-Fetch-Mode: cors';
         $headers[] = 'Sec-Fetch-Site: same-site';
